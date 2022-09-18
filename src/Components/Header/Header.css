@@ -20,3 +20,17 @@
     flex-direction: row;
     
 }
+
+@media screen and (max-width: 480px) {
+    .headerTitle{
+        font-size: 1.2em;
+    }
+
+    .salirTextButton{
+        display: none;
+    }
+    
+    .salirTextButton + span {
+        margin-left: 0!important
+    }
+}

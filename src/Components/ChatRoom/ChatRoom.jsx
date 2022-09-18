@@ -38,9 +38,7 @@ const ChatRoom = () => {
     }, [])
 
     useEffect(() => {
-      console.log("nuevo mensaje");
       if(chatRoomContainer.current !== undefined) {
-        console.log(chatRoomContainer?.current.offsetHeight)
         setChatContainerHeight(chatRoomContainer?.current.offsetHeight);
         chatRoomContainer.current.scrollTop = chatRoomContainer.current.scrollHeight
       }

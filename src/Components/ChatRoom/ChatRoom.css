@@ -4,6 +4,11 @@
     overflow-y: auto;
     height: 100%;
     margin-bottom: 30px;
+    scrollbar-width: none;
+}
+
+.chatRoomContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .chatRoomNoUserAuthContainer{

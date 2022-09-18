@@ -8,6 +8,13 @@
   flex-direction: column!important;
 }
 
+@media screen and (max-width: 480px){
+  .mainContainerApp{
+    margin: 0px auto;
+    border: none
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

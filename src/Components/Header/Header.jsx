@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { Container, Grid, Button } from "@mui/material";
+import { Container, Grid, Button, ButtonGroup } from "@mui/material";
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useDispatch, useStore } from "react-redux";
@@ -26,15 +26,10 @@ const Header = () => {
             navigate('/logout')
         })
         .catch(err => console.log(err))
-    }
-
-    useEffect(() => {
-        console.log(user)
-    }, [])
-    
+    }    
 
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} className="headerContainer">
             <Grid item xs={6} className="headerTitleContainer">
                 <h1 className="headerTitle">Telegram</h1>
             </Grid>
@@ -42,10 +37,14 @@ const Header = () => {
                 {user ? 
                     (
                         <div className='headerUserLogIn'>
-                            <h4>@{user?.user.displayName}</h4>
-                            <Button variant="outlined" endIcon={<LogoutIcon color="primary"></LogoutIcon>} onClick={handleLogOut}>
-                                Log out
-                            </Button>
+                            <ButtonGroup variant="outlined" aria-label="outlined button group">
+                                <Button>
+                                    @{user?.user.displayName}
+                                </Button>
+                                <Button endIcon={<LogoutIcon color="primary"></LogoutIcon>} onClick={handleLogOut}>
+                                    <span className='salirTextButton'>Salir</span>
+                                </Button>
+                            </ButtonGroup>
                         </div>
                     )
                     :
