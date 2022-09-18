@@ -1,0 +1,52 @@
+.signInViewContainer{
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em!important;
+}
+
+.signInViewContainer img{
+    width: 45%;
+}
+
+.signInViewContainer h2{
+    margin-bottom: 2em;
+    color: rgb(32, 32, 32);
+}
+
+.formSignUp{
+    color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 475px;
+}
+
+.formSignUp label {
+    color: #2675EC!important;
+    font-family: 'Space Grotesk'!important;
+}
+
+.formSignUp input{
+    color: black;
+    font-family: 'Space Grotesk'!important;
+}
+
+.formSignUp input + fieldset{
+    border-color: #2675EC!important;
+}
+
+.formSignUp label + div{
+    margin-bottom: 1.5em;
+}
+
+.signUpButton{
+    background-color: #2675EC!important;
+    padding: 16px!important;
+}
+
+.linkToSignIn{
+    color: #2675EC;
+    margin: 15px 0;
+}

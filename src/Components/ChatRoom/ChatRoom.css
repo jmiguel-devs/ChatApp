@@ -1,0 +1,19 @@
+.chatRoomContainer{
+    display: flex;
+    flex-direction: column!important;
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.chatRoomNoUserAuthContainer{
+    display: flex;
+    flex-direction: column!important;
+    margin-top: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatRoomNoUserAuthContainer p{
+    text-align: justify;
+}

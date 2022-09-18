@@ -1,0 +1,16 @@
+.homeContainer{
+    display: flex;
+    flex-direction: column!important;
+    height: 100%;
+    gap: 30px
+}
+
+.inputSendMessage{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.inputSendMessage fieldset{
+        border: none!important;
+
+}

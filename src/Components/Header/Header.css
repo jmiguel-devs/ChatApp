@@ -1,0 +1,22 @@
+.headerTitle{
+    color: #2675EC;
+    user-select: none
+}
+
+.headerTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headerUserContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerUserLogIn{
+    display: flex;
+    flex-direction: row;
+    
+}
