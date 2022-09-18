@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://jmiguel-devs.github.io/ChatApp",
+  "homepage": "https://jmiguel-devs.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
