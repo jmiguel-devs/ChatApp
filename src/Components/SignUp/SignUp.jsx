@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import { Container, Grid, TextField, Button } from '@mui/material';
+import { Grid, TextField, Button } from '@mui/material';
 import './SignUp.css'
 import img from '../../Resources/Images/signup.png'
-import { useDispatch, useSelector, useStore } from "react-redux";
-import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, updateProfile, signInWithEmailAndPassword } from "firebase/auth";
-import {userLoggedOut, userSignedIn} from '../../Context/Actions/Actions.js'
+import { useDispatch, useStore } from "react-redux";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {userSignedIn} from '../../Context/Actions/Actions.js'
 import {Link, useNavigate } from 'react-router-dom'
 
 const SignIn = () => {
@@ -24,10 +24,8 @@ const SignIn = () => {
     
     
     const initialStateSignUp = {displayName: '', email: '', password: ''}
-    const initialStateSignIn = {email: '', password: ''}
 
     const [userSignUp, setUserSignUp] = useState(initialStateSignUp)
-    const [userSignIn, setUserSignIn] = useState(initialStateSignIn)
 
     const handleSubmitSignUp = (e) => {
         e.preventDefault()
@@ -42,7 +40,6 @@ const SignIn = () => {
             navigate('/')
         })
         .catch(err => console.log(err))
-        
     }
 
     const handleInputChangeSignUp = (e) => {

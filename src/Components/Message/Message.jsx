@@ -17,10 +17,9 @@ const Message = (item) => {
 
     const formatDate = (date) => {
         return [
-            padTo2Digits(date.getDate()),
-            padTo2Digits(date.getMonth() + 1),
-            date.getFullYear(),
-        ].join('.');
+            padTo2Digits(date.getHours()),
+            padTo2Digits(date.getMinutes())
+        ].join(':');
     }
 
     if(user && message.uid === user.uid){

@@ -6,6 +6,7 @@ import ChatRoom from "./Components/ChatRoom/ChatRoom.jsx";
 import Header from "./Components/Header/Header.jsx";
 import SignUp from "./Components/SignUp/SignUp.jsx";
 import SignIn from "./Components/SignIn/SignIn.jsx";
+import LogOut from "./Components/LogOut/LogOut.jsx";
 import "./App.css";
 
 import "./index.css";
@@ -19,7 +20,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/signup" element={<SignUp />} />
           <Route exact path="/signin" element={<SignIn />} />
-          <Route exact path="/logout" element={<ChatRoom />} />
+          <Route exact path="/logout" element={<LogOut />} />
           <Route exact path="/:roomId" element={<ChatRoom />} />
         </Routes>
       </Container>

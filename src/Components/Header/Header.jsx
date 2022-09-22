@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import { Container, Grid, Button, ButtonGroup } from "@mui/material";
+import React from 'react'
+import { Grid, Button, ButtonGroup } from "@mui/material";
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useDispatch, useStore } from "react-redux";
@@ -21,7 +21,6 @@ const Header = () => {
     const handleLogOut = () => {
         signOut(auth)
         .then(()=>{
-            console.log("sign out");
             dispatch(userLoggedOut())
             navigate('/logout')
         })

@@ -5,7 +5,6 @@ export const userSignedIn = (user) => {
 };
 
 export const userLoggedOut = () => {
-  localStorage.setItem("userSignedIn", false);
-  localStorage.setItem("user", "");
+  localStorage.clear();
   return { type: "@user/loggedOut" };
 };
